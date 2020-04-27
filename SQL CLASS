@@ -1,0 +1,31 @@
+
+/* Basic SELECT STATEMENT
+SELECT [Column 1],[Column 2],[Column 3],......[Column N]
+FROM [DATABASE NAME].[SCHEMA NAME].[TABLE NAME]
+*/
+
+/* Column Alias Using Square Brackets or quotations */
+SELECT FirstName AS [Customer FIRST NAME], LastName AS "Customer Last Name"
+FROM Person.Person
+
+/* Views Folder (virtual Table) is a sql statement  */
+SELECT FirstName,LastName,EmailAddress,PhoneNumber
+FROM Sales.vIndividualCustomer
+
+/*  &&&&&&&&&&&&&&&&&&&&&&&&&&& NEW LINE &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* WHERE CLAUSE
+
+SELECT [Column 1],[Column 2],[Column 3],......[Column N]
+FROM [DATABASE NAME].[SCHEMA NAME].[TABLE NAME]
+WHERE [COLUMN NAME] {COMPARISON OPERATOR} [SOME VALUE]
+
+*/
+
+
+/* WHERE CLAUSE BASIC - Operators */
+SELECT *
+FROM Production.Product
+WHERE ListPrice > 10
+
+/* WHERE Section 2  >> #14 */
